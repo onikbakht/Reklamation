@@ -1,0 +1,91 @@
+<body>
+
+<style>
+
+
+
+input[type=text], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 30px 20px;
+background-color: #E7E1DF;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 78%;
+  background-color: #E7E1DF;
+  padding: 12px 20px;
+  margin: 8px 30px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: #FC5F2D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #E54816;
+}
+
+
+</style>
+
+
+<h2>HTML Forms</h2>
+
+<form form action="Email.php" method="post">
+  <label for="fname">Vorname:</label>
+  <input type="text" id="fname" name="fname" >
+
+  <label for="lname">Nachname:</label>
+  <input type="text" id="lname" name="lname" ><br><br>
+
+  <label for="email">E-Mail:</label>
+  <input type="email" id="Email" name="email" ><br><br>
+
+<label for="filiale">Wohaben Sie den Vertrag Geschlossen:</label>
+  <select name="filiale" id="filiale">
+    <option value="Raunheim">Raunheim</option>
+    <option value="Viernheim">Viernheim</option>
+    <option value="Köln">Köln</option>
+    <option value="Essen">Essen</option>
+  </select><br><br>
+
+
+  <label for="email">Beschreibung der Reklamation(400Karachter):</label><br>
+  <textarea name="message" placeholder="400 Charachter" style="margin: 8px 30px; width:320px; height:150px;  border: 2px solid #ccc; background-color: #E7E1DF; ">     </textarea><br><br>
+
+<label for="email">Laden Sie bitte die Datei hoch:</label><br>
+  <input type="file" name="attachment" accept="image/png, image/jpeg, image/jpg" style="margin: 8px 30px; width:320px; height:90px;  border: 2px solid #ccc; background-color: #E7E1DF; " multiple="multiple"><br><br>
+
+
+
+        <label>Add files (multiple): </label><br/>
+        <input type="file" name="example3[]" multiple="multiple"/>
+
+
+  <input type="submit" value="Submit">
+
+</form>
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called .</p>
+
+
+
+
+</body>
